@@ -1,0 +1,127 @@
+.p-main{
+    position: relative;
+    top: 55px;
+    width: 100%;
+    height: 1200px;
+    /* background-color: pink; */
+}
+.p-heading{
+    text-align: center;
+    font-size: large;
+    position: relative;
+    top: 50px;
+}
+.cards{
+    display: flex;
+}
+.card{
+    width: 275px;
+    height: 400px;
+    position: relative;
+    left: 80px;
+    top: 100px;
+    border: 1px solid black;
+    margin-left: 50px;
+    box-shadow: 1px 1px 10px 2px black;
+    background-color: rgb(239, 235, 235);
+    transition: 0.5s;
+}
+
+.card img{
+    width: 99.5%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.card p{
+    margin: 5px;
+}
+.card button{
+  margin: 10px 90px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(192, 255, 238);
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.card:hover{
+    scale: 1.1;
+}
+
+.card button:hover{
+    background-color:  rgb(128, 237, 208);;
+}
+
+.slider{
+    position: relative;
+    top: 240px;
+}
+
+.clients{
+    text-align: center;
+    position: relative;
+    top: 170px;
+}
+
+.p-footer{
+    width: 100%;
+    height: 230px;
+}
+
+.p-f-icon{
+    position: relative;
+    top: 40px;
+    left: 600px;
+}
+
+.p-f-icon img:hover {
+    scale: 1.2;
+}
+
+.p-f-icon img{
+    margin-left: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.p-f-a{
+    position: relative;
+    top: 80px;
+    margin-left: 520px;
+}
+
+.p-f-link{
+    margin-left: 50px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+.p-f-link:hover{
+    opacity: 0.7;
+    color: red;
+}
+
+.p-copy{
+    position: relative;
+    top: 140px;
+    margin-left: 610px;
+}
+
+.p-hr{
+    position: relative;
+    top: 100px;
+    left: 70px;
+    background-color: black;
+    width: 90%;
+    height: 2px;
+}

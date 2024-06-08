@@ -1,0 +1,88 @@
+.c-main{
+    margin: 0;
+    padding: 55px 0 0 0;
+    height: 500px;
+}
+
+video{
+    width: 100%;
+}
+
+form{
+    position: relative;
+    bottom: 800px;
+    width: 500px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 120px 0 0 550px;
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+    background: transparent;
+    box-shadow: 0px 0px 7px 0px white;
+}
+
+.c-h1{
+    text-align: center;
+    margin: 15px;
+    color: white;
+}
+table{
+    margin-left: 10px;
+}
+
+td{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+input{
+    width: 300px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 9px;
+    border-radius: 5px;
+    border: none;
+}
+select{
+    padding: 5px;
+    width: 58px;
+    position: relative;
+    top: 9px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+}
+#number{
+    width: 150px;
+}
+textarea{
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 310px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.c-button{
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(24, 61, 108);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    position: relative;
+    left: 13rem;
+    top: 20px;
+}
+.c-button:hover{
+    background-color: rgb(14, 43, 80);
+    cursor: pointer;
+
+}
