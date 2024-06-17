@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Pages/About.css";
 import node from "../Images/n.png";
 import mongo from "../Images/Mongodb.png";
@@ -22,13 +22,22 @@ import timg from "../Images/telegram-removebg-preview.png";
 
 import inimg from "../Images/instagram.jpg";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 
 function About() {
+  useEffect(()=>{
+    Aos.init({
+      offset: 200,
+      duration : 1000 
+    })
+  },[])
   return (
     <div>
       <div className="a-main">
         <img
-          className="a-img"
+          className="a-img" data-aos = "fade-right"
           src="https://img.freepik.com/free-photo/young-man-wearing-blue-outfit-holding-red-folder_1298-182.jpg"
           alt=""
         />
@@ -61,61 +70,61 @@ function About() {
 
         <h1 className="a-s-h1">MY SKILLS</h1>
       <div className="skill">
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-right" >
           <h2 className="text-img-h2 node">Node.Js</h2>
           <img src={node} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-left">
           <h2 className="text-img-h2 mongo">MongoDB</h2>
           <img src={mongo} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-right">
           <h2 className="text-img-h2 react">React.Js</h2>
           <img src={react} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-left">
           <h2 className="text-img-h2">Python</h2>
-          <img src={python} className="a-s-img" alt=""  />
+          <img src={python} className="a-s-img" alt="" />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-right">
           <h2 className="text-img-h2 java">JavaScript</h2>
           <img src={js} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-left">
           <h2 className="text-img-h2 html">HTML</h2>
           <img src={html} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-right">
           <h2 className="text-img-h2 css">CSS</h2>
           <img src={css} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-left">
           <h2 className="text-img-h2">GitHub</h2>
           <img src={git} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-right">
           <h2 className="text-img-h2 corel">CorelDRAW</h2>
           <img src={corel} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-left">
           <h2 className="text-img-h2 figma">Figma</h2>
           <img src={figma} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-right">
           <h2 className="text-img-h2 illu">Illustrator</h2>
           <img src={illu} className="a-s-img" alt=""  />
         </div>
 
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-left">
           <h2 className="text-img-h2 photo">PhotoShop</h2>
           <img src={photoshop} className="a-s-img" alt="" />
         </div>

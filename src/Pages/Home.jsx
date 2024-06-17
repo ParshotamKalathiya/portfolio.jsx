@@ -21,6 +21,8 @@ import corel from "../Images/corel.png";
 import figma from "../Images/figma.png";
 import illu from "../Images/Illustrator.png";
 import photoshop from "../Images/photoshop.png";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 import { useEffect, useState } from "react";
 
@@ -39,6 +41,12 @@ import "../Pages/Contact.css";
 import background from "../Video/earth.mp4";
 
 function Home() {
+  useEffect(()=>{
+    Aos.init({
+      offset: 200,
+      duration : 1000
+    },[])
+  })
   const images = [image1, image2, image4];
   return (
     <div>
@@ -68,7 +76,7 @@ function Home() {
 
             <br />
             <button className="hire-btn">
-              <a href="/Hire">Hire Me</a>
+              <a href="/Contact">Hire Me</a>
             </button>
 
             <a href="https://github.com/ParshotamKalathiya" className="h-icon">
@@ -102,9 +110,9 @@ function Home() {
         </div>
       </div>
 
-      <div className="a-main">
+      <div className="a-main" id="Home">
         <img
-          className="a-img"
+          className="a-img" data-aos = "flip-left"  data-aos-anchor-placement="top-bottom"
           src="https://img.freepik.com/free-photo/
           young-man-wearing-blue-outfit-holding-red-folder_1298-182.jpg"
           alt=""
@@ -137,51 +145,51 @@ function Home() {
       </div>
       <h1 className="a-s-h1">MY SKILLS</h1>
       <div className="skill">
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-left">
           <h2 className="text-img-h2 node">Node.Js</h2>
           <img src={node} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "fade-right">
           <h2 className="text-img-h2 mongo">MongoDB</h2>
           <img src={mongo} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2 react">React.Js</h2>
           <img src={react} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2">Python</h2>
           <img src={python} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2 java">JavaScript</h2>
           <img src={js} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2 html">HTML</h2>
           <img src={html} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2 css">CSS</h2>
           <img src={css} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2">GitHub</h2>
           <img src={git} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2 corel">CorelDRAW</h2>
           <img src={corel} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2 figma">Figma</h2>
           <img src={figma} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2 illu">Illustrator</h2>
           <img src={illu} className="a-s-img" alt="" />
         </div>
-        <div className="text-img">
+        <div className="text-img" data-aos = "flip-left">
           <h2 className="text-img-h2 photo">PhotoShop</h2>
           <img src={photoshop} className="a-s-img" alt="" />
         </div>
@@ -193,8 +201,8 @@ function Home() {
           <h1>Projects</h1>
         </div>
 
-        <div className="cards">
-          <div className="card">
+        <div className="cards" >
+          <div className="card" data-aos="fade-left">
             <img src={res} alt="" />
             <h3>Responsive Web Design</h3>
             <p>
@@ -205,7 +213,7 @@ function Home() {
             </p>
             <button>Read More</button>
           </div>
-          <div className="card">
+          <div className="card" data-aos="fade-left">
             <img src={net} alt="" />
             <h3>Netflix Clone</h3>
             <p>
@@ -216,7 +224,7 @@ function Home() {
             </p>
             <button>Read More</button>
           </div>
-          <div className="card">
+          <div className="card" data-aos="fade-left">
             <img src={age} alt="" />
             <h3>Age calculator</h3>
             <p>
@@ -227,7 +235,7 @@ function Home() {
             </p>
             <button>Read More</button>
           </div>
-          <div className="card">
+          <div className="card" data-aos="fade-left">
             <img src={game} alt="" />
             <h3>Makeing Game Using JS</h3>
             <p>
