@@ -4,7 +4,7 @@ import res from "../Images/responsive.jpg";
 import net from "../Images/netflix.jpg";
 import age from "../Images/age calculator.png";
 import game from "../Images/game.jpeg";
-import image1 from "../Images/a.jpg";
+import image1 from '../Images/silder card.jpg';
 import image2 from "../Images/c.jpg";
 import image4 from "../Images/customer_.jpg";
 import { Zoom } from "react-slideshow-image";
