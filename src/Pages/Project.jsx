@@ -4,9 +4,8 @@ import res from "../Images/responsive.jpg";
 import net from "../Images/netflix.jpg";
 import age from "../Images/age calculator.png";
 import game from "../Images/game.jpeg";
-import image1 from '../Images/silder card.jpg';
-import image2 from "../Images/c.jpg";
-import image4 from "../Images/customer_.jpg";
+import image1 from "../Images/Slider.jpg";
+import image2 from "../Images/slider1.jpg";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import gimg from "../Images/github-removebg-preview.png";
@@ -15,9 +14,8 @@ import fimg from "../Images/Facebook-removebg-preview.png";
 import timg from "../Images/telegram-removebg-preview.png";
 import inimg from "../Images/instagram.jpg";
 
-
 function Project() {
-  const images = [image1, image2, image4];
+  const images = [image1, image2];
   return (
     <div>
       <div className="p-main">
@@ -75,7 +73,7 @@ function Project() {
 
         <h1 className="clients">My Happy Clients</h1>
         <div className="slider">
-          <Zoom scale={0.4}>
+          <Zoom scale={0.4} duration = {2000}>
             {images.map((each, index) => (
               <img
                 key={index}
@@ -86,8 +84,6 @@ function Project() {
           </Zoom>
         </div>
       </div>
-
-
 
       <footer className="p-footer">
         <a href="https://github.com/ParshotamKalathiya" className="p-f-icon">
@@ -116,16 +112,24 @@ function Project() {
         </a>
 
         <div className="p-f-a">
-          <a className="p-f-link" href="">Home</a>
-          <a className="p-f-link" href="">About</a>
-          <a className="p-f-link" href="">Project</a>
-          <a className="p-f-link" href="">Contact</a>
+          <a className="p-f-link" href="">
+            Home
+          </a>
+          <a className="p-f-link" href="">
+            About
+          </a>
+          <a className="p-f-link" href="">
+            Project
+          </a>
+          <a className="p-f-link" href="">
+            Contact
+          </a>
         </div>
 
         <div className="p-copy">
-          <p>	&#169;2024 : Designed by Parasotam Kalathiya</p>
+          <p> &#169;2024 : Designed by Parasotam Kalathiya</p>
         </div>
-            <hr className="p-hr" />
+        <hr className="p-hr" />
       </footer>
     </div>
   );

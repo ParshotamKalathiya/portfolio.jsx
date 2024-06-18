@@ -13,15 +13,11 @@ import figma from "../Images/figma.png";
 import illu from "../Images/Illustrator.png";
 import photoshop from "../Images/photoshop.png";
 import gimg from "../Images/github-removebg-preview.png";
-
 import limg from "../Images/linkdein.jpg";
-
 import fimg from "../Images/Facebook-removebg-preview.png";
-
 import timg from "../Images/telegram-removebg-preview.png";
-
 import inimg from "../Images/instagram.jpg";
-
+import myapic from "../Images/mypic-a.jpg"
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -38,7 +34,7 @@ function About() {
       <div className="a-main">
         <img
           className="a-img" data-aos = "fade-right"
-          src="https://img.freepik.com/free-photo/young-man-wearing-blue-outfit-holding-red-folder_1298-182.jpg"
+          src={myapic}
           alt=""
         />
         <div className="a-text">

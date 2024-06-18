@@ -1,7 +1,7 @@
 import React from "react";
 import "../Pages/Home.css";
 import Typewriter from "typewriter-effect";
-import pimg from "../Images/IMG_20240407_140758.jpg";
+import pimg from "../Images/mypic.png";
 import gimg from "../Images/github-removebg-preview.png";
 import limg from "../Images/linkdein.jpg";
 import fimg from "../Images/Facebook-removebg-preview.png";
@@ -21,8 +21,9 @@ import corel from "../Images/corel.png";
 import figma from "../Images/figma.png";
 import illu from "../Images/Illustrator.png";
 import photoshop from "../Images/photoshop.png";
+import myapic from "../Images/mypic-a.jpg";
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 import { useEffect, useState } from "react";
 
@@ -31,9 +32,8 @@ import res from "../Images/responsive.jpg";
 import net from "../Images/netflix.jpg";
 import age from "../Images/age calculator.png";
 import game from "../Images/game.jpeg";
-import image1 from "../Images/a.jpg";
-import image2 from "../Images/c.jpg";
-import image4 from "../Images/customer_.jpg";
+import image1 from "../Images/Slider.jpg";
+import image2 from "../Images/slider1.jpg";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
@@ -41,20 +41,23 @@ import "../Pages/Contact.css";
 import background from "../Video/earth.mp4";
 
 function Home() {
-  useEffect(()=>{
-    Aos.init({
-      offset: 200,
-      duration : 1000
-    },[])
-  })
-  const images = [image1, image2, image4];
+  useEffect(() => {
+    Aos.init(
+      {
+        offset: 200,
+        duration: 1000,
+      },
+      []
+    );
+  });
+  const images = [image1, image2];
   return (
     <div>
       <div className="main">
         <div className="view">
           <div className="intro">
             <h1 className="heading-text">
-              <h1 className="my-name">
+              <h1 className="my-name" data-aos="fade-down">
                 Hi, i am <br />
                 Parasotam Kalathiya
               </h1>
@@ -66,7 +69,7 @@ function Home() {
                 }}
               />
             </h1>
-            <h3>
+            <h3 data-aos="fade-down">
               As a Full Stack Web Developer, I have successfully designed and
               implemented numerous projects, showcasing my ability to deliver
               high-quality solutions. I am skilled in both front-end and
@@ -105,16 +108,17 @@ function Home() {
             </a>
           </div>
           <div className="port-img">
-            <img className="p-img" src={pimg} alt="" />
+            <img className="p-img" src={pimg} alt="" data-aos="zoom-in-up" />
           </div>
         </div>
       </div>
 
       <div className="a-main" id="Home">
         <img
-          className="a-img" data-aos = "flip-left"  data-aos-anchor-placement="top-bottom"
-          src="https://img.freepik.com/free-photo/
-          young-man-wearing-blue-outfit-holding-red-folder_1298-182.jpg"
+          className="a-img"
+          data-aos="flip-left"
+          data-aos-anchor-placement="top-bottom"
+          src={myapic}
           alt=""
         />
         <div className="a-text">
@@ -145,51 +149,51 @@ function Home() {
       </div>
       <h1 className="a-s-h1">MY SKILLS</h1>
       <div className="skill">
-        <div className="text-img" data-aos = "fade-left">
+        <div className="text-img" data-aos="fade-left">
           <h2 className="text-img-h2 node">Node.Js</h2>
           <img src={node} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "fade-right">
+        <div className="text-img" data-aos="fade-right">
           <h2 className="text-img-h2 mongo">MongoDB</h2>
           <img src={mongo} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2 react">React.Js</h2>
           <img src={react} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2">Python</h2>
           <img src={python} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2 java">JavaScript</h2>
           <img src={js} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2 html">HTML</h2>
           <img src={html} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2 css">CSS</h2>
           <img src={css} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2">GitHub</h2>
           <img src={git} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2 corel">CorelDRAW</h2>
           <img src={corel} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2 figma">Figma</h2>
           <img src={figma} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2 illu">Illustrator</h2>
           <img src={illu} className="a-s-img" alt="" />
         </div>
-        <div className="text-img" data-aos = "flip-left">
+        <div className="text-img" data-aos="flip-left">
           <h2 className="text-img-h2 photo">PhotoShop</h2>
           <img src={photoshop} className="a-s-img" alt="" />
         </div>
@@ -201,7 +205,7 @@ function Home() {
           <h1>Projects</h1>
         </div>
 
-        <div className="cards" >
+        <div className="cards">
           <div className="card" data-aos="fade-left">
             <img src={res} alt="" />
             <h3>Responsive Web Design</h3>
@@ -250,7 +254,7 @@ function Home() {
 
         <h1 className="clients">My Happy Clients</h1>
         <div className="slider">
-          <Zoom scale={0.4}>
+          <Zoom scale={0.4} duration={2000}>
             {images.map((each, index) => (
               <img
                 key={index}
@@ -263,6 +267,9 @@ function Home() {
       </div>
 
       <div className="c-main">
+        <div className="c-heading">
+          <h1>Contact Me</h1>
+        </div>
         <video className="VideoTag" autoPlay loop muted>
           <source src={background} type="video/mp4" />
         </video>
@@ -435,16 +442,24 @@ function Home() {
         </a>
 
         <div className="f-a">
-          <a className="f-link" href="">Home</a>
-          <a className="f-link" href="">About</a>
-          <a className="f-link" href="">Project</a>
-          <a className="f-link" href="">Contact</a>
+          <a className="f-link" href="">
+            Home
+          </a>
+          <a className="f-link" href="">
+            About
+          </a>
+          <a className="f-link" href="">
+            Project
+          </a>
+          <a className="f-link" href="">
+            Contact
+          </a>
         </div>
 
         <div className="copy">
-          <p>	&#169;2024 : Designed by Parasotam Kalathiya</p>
+          <p> &#169;2024 : Designed by Parasotam Kalathiya</p>
         </div>
-            <hr />
+        <hr />
       </footer>
     </div>
   );
